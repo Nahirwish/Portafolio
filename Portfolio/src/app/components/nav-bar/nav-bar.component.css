@@ -1,0 +1,33 @@
+/* -------------nav------------------- */
+nav{
+    text-align: start;
+    justify-content: end;
+    
+}
+
+li{
+    text-align: end;
+    
+}
+
+li a{
+    color: #fff;
+}
+
+/* -------------nav------------------- */
+
+.logo{
+    width: 100%;
+    height: 50px;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+#marcado{
+    text-decoration: underline;
+
+}
