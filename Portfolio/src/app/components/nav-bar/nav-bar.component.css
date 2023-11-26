@@ -1,31 +1,27 @@
+
 /* -------------nav------------------- */
 nav{
+    float: right;
+    margin-top: 20px;
     text-align: start;
     justify-content: end;
+    align-items: flex-start;
     
 }
 
 li{
     text-align: end;
+    display: inline;
+    padding: 20px;
     
 }
 
 li a{
     color: #fff;
+    text-decoration: none;
 }
 
-/* -------------nav------------------- */
 
-.logo{
-    width: 100%;
-    height: 50px;
-}
-
-.logo img{
-    width: 100px;
-    height: 100px;
-    display: flex;
-}
 
 #marcado{
     text-decoration: underline;

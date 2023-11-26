@@ -25,7 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/app/components/footer/footer.component.css",
+              "src/app/components/nav-bar/nav-bar.component.css"
             ],
             "scripts": []
           },
@@ -84,10 +86,11 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets/img"
             ],
             "styles": [
               "src/styles.css"
+              
             ],
             "scripts": []
           }
