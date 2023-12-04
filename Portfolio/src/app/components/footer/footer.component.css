@@ -1,16 +1,8 @@
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: blue;
-
-}
-
 .redes {
     display: flex;
     align-items: center;
     height: 110px;
-    padding: 10px;
+    justify-content: right;
 
 }
 

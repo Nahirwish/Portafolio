@@ -1,9 +1,10 @@
-#container{
+#container_logo{
     height: 110px;
     width: 160px;
+    
 }
 
-#container img{
+#container_logo img{
    height: 100%;
    width: 100%;
    object-fit: contain;
