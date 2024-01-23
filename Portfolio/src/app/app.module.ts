@@ -14,6 +14,7 @@ import { LogoComponent } from './components/logo/logo.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     FooterComponent,
     LogoComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    PortfolioComponent
     
   ],
   imports: [

@@ -3,6 +3,7 @@ body{
     background-image: url(src/assets/img/blue_forest.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center center;
     min-height: 100vh;
     margin: 0;

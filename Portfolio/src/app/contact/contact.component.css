@@ -63,7 +63,7 @@
     margin-top: 10px;
 }
 
-.btn{
+#btn-cv{
     height: 50px;
     width: 170px;
     margin-left: 10px;
@@ -71,6 +71,13 @@
     padding: 10px;
     align-items: center;
 
+}
+#btn-send{
+    height: 30px;
+    width: 100px;
+    margin: 10px 10px;
+    float: right;
+    
 }
 
 .btn :hover{
