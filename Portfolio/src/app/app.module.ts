@@ -5,6 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { provideRouter } from '@angular/router';
 import { routes } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -34,7 +35,10 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     RouterModule,
     NgbModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+    
+    
   ],
   
   providers: [provideRouter(routes)],

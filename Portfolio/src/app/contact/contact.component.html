@@ -1,5 +1,6 @@
 <div class="container">
-    <div class="form">
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" class="userForm">
+      <div class="form">
         <h2>Contact me</h2>
         <h3>Full Name</h3>
         <input type="text" id="fullName" class="form-control" required>
@@ -9,18 +10,19 @@
         <textarea name="Your Message" id="message" cols="30" rows="10"></textarea>
         <button id="btn-send">SEND</button>
         <!--  -->
+      </div>
+    </form>
 
-    </div>
+  
 
-    <div class="info">
-        <p>If you want to work with me, contact me and I will be answer 
-            as soon I can. Or save my contact information for later
-        </p>
-        <br>
-        <p>Phone: +54 2255508689
-            <br>
-        E-mail: nahir.afk@gmail.com</p>
-        <button id="btn-cv"><img src="/assets/img/icons8-download.png" alt="">Download CV</button>
-    </div>
-
+  <div class="info">
+      <p>If you want to work with me, contact me and I will be answer 
+          as soon I can. Or save my contact information for later
+      </p>
+      <br>
+      <p>Phone: +54 2255508689
+      <br>
+          E-mail: nahir.afk@gmail.com</p>
+      <button id="btn-cv"><img src="/assets/img/icons8-download.png" alt=""(click)="downloadCv()">Download CV</button>
+  </div>
 </div>

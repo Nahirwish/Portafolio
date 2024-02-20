@@ -20,23 +20,46 @@ h1{
     font-size: 32;
     color: #fff;
     float: right;
-    margin: 80px 100px;
+    margin: 80px 60px;
     padding: 20px;
     
 }
 
 #photo{
-    height: 90vh;
-    height: 300px;
+    width: 40vh;
+    height: 450px;
     background-color: rgb(63, 55, 55);
     display: flex;
+    margin:80px  auto 0;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#photo img{
+    height: 80%;
+    width: 100%;
+}
+#photo h2{
+    color: #fff;
     margin: auto;
 }
-/* certificados */
-#certificates{
+
+/* Segunda Parte */
+#skills{
+    justify-content: space-between;
+    flex-direction: row;
     height: 100vh;
-    width: 90%;
-    margin:400px auto;
+    width: 100%;
+    margin:400px auto ;
+    display: flex;
+    
+
+}
+
+#certificates{
+    height: 80%;
+    width: 50%;
+    margin-left: 30px;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
@@ -58,4 +81,32 @@ h1{
     color: #fff;
 }
 
-/*  */
+#certificates .boxes :hover{
+    width: 600px;
+    height: 200px;
+}
+/* Languages  */
+#languages{
+    float: right;
+    
+    width: 360px;
+    margin:20px 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    display: flex;
+    
+
+}
+.cajitas{
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+.cajitas img{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+}

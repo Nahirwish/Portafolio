@@ -6,7 +6,7 @@
     height: 70vh; 
     width: 90%;   
     margin: 160px auto 0; 
-    background-color: blueviolet;
+    background: radial-gradient( rgba(22, 23, 25, 0.6) 0%, rgba(45, 46, 48, 0.6) 50%, rgba(22, 23, 25, 0.6) 100%);
     
    
 }
