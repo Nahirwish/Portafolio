@@ -11,12 +11,20 @@
     <div class="display">
         
     </div>
-
-
 </div>
+
 <div class="container">
     <h1>ART</h1>
-    <div class="display">
+    <div class="slider">
+        <div class="slides">
+            <div *ngfor="let i of drawings" class="slide">
+                <img [src]="i" alt="slide">
+            </div>
+        </div>
+        <div class="sliderButtoms">
+            <button class="prev" (click)="prevSlide()">❮</button>
+            <button class="next" (click)="nextSlide()">❯</button>
+        </div>
         
     </div>
 
