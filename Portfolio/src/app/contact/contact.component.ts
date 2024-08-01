@@ -40,22 +40,29 @@ export class ContactComponent implements OnInit {
     }
   }
 
-  downloadFile(): void{
-    this.fileService.downloadCv().subscribe(url =>{
-      console.log("url:", url)
-      const a = document.createElement('a');
-      a.href = url;
-      a.target = '_blank';
-      a.download = 'Nahir_Vignolo_Software_Developer.pdf'
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      window.URL.revokeObjectURL(url);
-      setTimeout(() => window.URL.revokeObjectURL(url), 100);
-      }, error =>{
-        console.error('Error downloading file', error)
-      });
-    
+  downloadFile(): void {
+    this.fileService.downloadCv().subscribe(url => {
+      console.log('Download URL:', url);
+      fetch(url)
+        .then(response => response.blob())
+        .then(blob => {
+          const link = document.createElement('a');
+          const objectURL = URL.createObjectURL(blob);
+          link.href = objectURL;
+          link.target = '_blank';
+          link.setAttribute('download', 'Nahir_Vignolo_Software_Developer_CV.pdf');
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          setTimeout(() => URL.revokeObjectURL(objectURL), 100);
+        })
+        .catch(error => console.error('Error fetching the file', error));
+    }, error => {
+      console.error('Error downloading file', error);
+    });
   }
+  
+    
+  
 
 }
