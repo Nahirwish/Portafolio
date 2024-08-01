@@ -3,11 +3,11 @@
       <div class="form">
         <h2>Contact me</h2>
         <h3>Full Name</h3>
-        <input type="text" id="fullName" class="form-control" required>
+        <input type="text" id="fullName" class="form-control" required [(ngModel)]="contact.fullName" name="fullName">
         <h3>E-mail</h3>
-        <input type="text" id="eMail" class="form-control" required>
+        <input type="text" id="eMail" class="form-control" required [(ngModel)]="contact.email" name="email">
         <h3>Message</h3>
-        <textarea name="Your Message" id="message" cols="30" rows="10"></textarea>
+        <textarea name="Your Message" id="message" cols="30" rows="10" [(ngModel)]="contact.message" name="message"></textarea>
         <button id="btn-send">SEND</button>
         <!--  -->
       </div>
@@ -20,9 +20,9 @@
           as soon I can. Or save my contact information for later
       </p>
       <br>
-      <p>Phone: +54 2255508689
-      <br>
-          E-mail: nahir.afk@gmail.com</p>
-      <button id="btn-cv"><img src="/assets/img/icons8-download.png" alt=""(click)="downloadCv()">Download CV</button>
+      <button id="btn-cv" (click)="downloadFile()">
+        <img src="/assets/img/icons8-download.png" alt=""/>Download CV
+      </button>
+
   </div>
 </div>

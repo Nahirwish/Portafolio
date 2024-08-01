@@ -7,12 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class ContactFormService {
   private url = "http://localhost:8080/ContactForm"
+  
 
   constructor(private httpClient: HttpClient) { }
 
-  downloadCv(): Observable<any>{
-    return this.httpClient.get(this.url)
-    
 
-  } 
 }

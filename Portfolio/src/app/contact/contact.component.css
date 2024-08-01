@@ -84,6 +84,8 @@
     
 }
 
-.btn :hover{
+/* -------------------------- */
+
+button :hover{
     background-color: aqua;
 }

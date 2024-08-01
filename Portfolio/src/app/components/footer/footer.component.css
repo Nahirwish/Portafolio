@@ -3,7 +3,9 @@
     align-items: center;
     height: 110px;
     justify-content: right;
-
+    background-color: black;
+    margin-bottom: 0;
+    background-image: linear-gradient(#1A1D1A, #2E5746);
 }
 
 ul {

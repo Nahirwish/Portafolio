@@ -1,17 +1,20 @@
-.container{
-    display: flex;
+.fullScreen_container{
+    /* display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    height: 70vh; 
-    width: 90%;   
-    margin: 160px auto 0; 
+    justify-content: flex-start;*/ 
+    margin: 160px auto 200px;  
     background: radial-gradient( rgba(22, 23, 25, 0.6) 0%, rgba(45, 46, 48, 0.6) 50%, rgba(22, 23, 25, 0.6) 100%);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.8s ease-in-out;
     
    
 }
 
-.container h1{
+.fullScreen_container h1{
     color: #fff;
     font-size: 34px;
     font-weight: bold;

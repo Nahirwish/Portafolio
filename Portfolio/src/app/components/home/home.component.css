@@ -81,9 +81,9 @@ h1{
     color: #fff;
 }
 
-#certificates .boxes :hover{
-    width: 600px;
-    height: 200px;
+.boxes :hover{
+    border: 5px solid #fff;
+    flex-grow: 2;
 }
 /* Languages  */
 #languages{

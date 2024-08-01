@@ -6,6 +6,9 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularFireModule }  from '@angular/fire/compat';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { environment } from '../environments/environment';
 
 
 import { AppComponent } from './app.component';
@@ -36,7 +39,9 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     NgbModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireStorageModule
     
     
   ],
